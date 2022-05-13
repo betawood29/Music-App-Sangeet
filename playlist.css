@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    background-color: hsl(231deg 53% 10%);
+    font-family: "Outfit", sans-serif;
+    color: white;
+    margin-bottom: 97px;
+  }
+  
+  :root {
+    --lessblue: hsl(230deg 55% 16%);
+    --darkblue: hsl(230deg 32% 15%);
+  }
+  
+  .navbar {
+    margin: 10px;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar img {
+    border-radius: 50%;
+  }
+  
+  .navbar1 a {
+    color: white;
+    font-size: large;
+    text-decoration: none;
+    position: relative;
+    bottom: 30px;
+    left: 3rem;
+  }
+  
+  .navbar2 {
+    display: flex;
+    justify-content: space-around;
+    /* padding-top: 30px; */
+  }
+  
+  .navbar2 * {
+    margin: 10px;
+  }
+  
+  .fa-bell {
+    color: white;
+    padding-top: 5px;
+  }
+  
+  .search {
+    position: absolute;
+    top: 36px;
+    right: 355px;
+    color: white;
+    background-color: var(--lessblue);
+    border: none;
+  }
+  
+  .mic {
+    position: absolute;
+    top: 36px;
+    right: 170px;
+    color: white;
+    background-color: var(--lessblue);
+    border: none;
+  }
+  
+  .navbar2 input {
+    background-color: var(--lessblue);
+    border: none;
+    border-radius: 7px;
+    margin: 10px 0;
+    padding: 5px 28px;
+    color: white;
+    height: 1.8rem;
+  }
+  
+  .body-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 97px;
+  }
+  
+  .main-section {
+    height: 10px;
+    width: 65vw;
+  }
+  
+  .queue-section {
+    height: 10px;
+    width: 25vw;
+  }
+  
+  /* ---------------------------------------- QUEUE SECTION ---------------------------------------------------- */
+  
+  .queue-head {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .queue-head h3 {
+    display: inline-block;
+    margin: 20px 0;
+  }
+  
+  .queue-head p {
+    display: inline-block;
+    margin: 20px;
+  }
+  
+  .queue-playlist_0 img {
+    border-radius: 3px;
+  }
+  
+  .queue-playlist_0 div {
+    margin: 5px 0;
+  }
+  
+  .queue-playlist_0 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 10px;
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+  }
+  
+  .queue-playlist_0 h4 {
+    margin: 0 0 5px 0;
+    display: inline-block;
+  }
+  
+  .queue-playlist_0 p {
+    margin: 0;
+    display: inline-block;
+  }
+  
+  .queue-playlist {
+    padding: 20px;
+    line-height: 2;
+  }
+  
+  .queue-playlist h5 {
+    display: inline-block;
+    position: relative;
+    bottom: 25px;
+    margin-left: -5px;
+    margin-right: 5px;
+  }
+  
+  .queue-playlist img {
+    border-radius: 5px;
+  }
+  
+  .queue-playlist ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 10px;
+    display: inline-block;
+  }
+  
+  .queue-playlist h4 {
+    margin: 0;
+    display: inline-block;
+  }
+  
+  .queue-playlist p {
+    margin: 0;
+    display: inline-block;
+  }
+  
+  .queue-playlist li {
+    margin: 0;
+  }
+  
+  /* --------------------------------------------- MAIN SECTION ------------------------------------------------- */
+  
+  .main-body {
+    display: flex;
+    flex-direction: column;
+    /* line-height: 1.5; */
+    width: 95%;
+  }
+  
+  .main-card {
+    display: flex;
+    font-family: "Dongle", sans-serif;
+    font-size: 1.2rem;
+    background-color: hsl(231deg 53% 17%);
+    margin: 5px;
+    margin-right: 20px;
+  }
+  
+  .main-card h1 {
+    display: inline-block;
+    width: 70%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .main-card h3 {
+    margin: 0;
+  }
+  
+  .main-card p {
+      font-size: 1.5rem;
+      line-height: 1;
+  }
+  
+  .main-card button {
+    border: none;
+    background-image: linear-gradient(
+      to right,
+      hsl(245deg 61% 32%),
+      hsl(288deg 68% 57%)
+    );
+    height: 2.2rem;
+    width: 8rem;
+    color: white;
+    font-family: "Dongle", sans-serif;
+    font-size: 1.52rem;
+  }
+  
+  .main-playlist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--darkblue);
+    margin: 5px;
+    padding: 10px 10px 10px 15px;
+    width: 99%;
+  }
+  
+  .main-playlist h5 {
+    display: inline-block;
+    position: relative;
+    bottom: 25px;
+    margin-left: -5px;
+    margin-right: 5px;
+  }
+  
+  .main-second img {
+    border-radius: 1px;
+  }
+  
+  .main-body ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 10px;
+    position: relative;
+    bottom: 20%;
+    display: inline-block;
+  }
+  
+  .main-body h4 {
+    margin: 0;
+    display: inline-block;
+  }
+  
+  .main-body p {
+    margin: 0;
+    display: inline-block;
+  }
+  
+  .main-body li {
+    margin: 0;
+  }
