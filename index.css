@@ -1,0 +1,371 @@
+body {
+  margin: 0;
+  /* background-color: rgb(17, 17, 71); */
+  background-color: hsl(231deg 53% 10%);
+  font-family: "Outfit", sans-serif;
+  color: white;
+  margin-bottom: 97px;
+}
+
+:root {
+  /* --lessblue: rgb(23, 23, 105); */
+  --lessblue: hsl(230deg 55% 16%);
+}
+
+.navbar {
+  margin: 10px;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar img {
+  border-radius: 50%;
+}
+
+.navbar1 a {
+  color: white;
+  font-size: large;
+  text-decoration: none;
+  position: relative;
+  bottom: 30px;
+  left: 3rem;
+}
+
+.navbar2 {
+  display: flex;
+  justify-content: space-around;
+  /* padding-top: 30px; */
+}
+
+.navbar2 * {
+  margin: 10px;
+}
+
+.fa-bell {
+  color: white;
+  padding-top: 5px;
+}
+
+.search {
+  position: absolute;
+  top: 36px;
+  right: 355px;
+  color: white;
+  background-color: var(--lessblue);
+  border: none;
+}
+
+.mic {
+  position: absolute;
+  top: 36px;
+  right: 170px;
+  color: white;
+  background-color: var(--lessblue);
+  border: none;
+}
+
+.navbar2 input {
+  background-color: var(--lessblue);
+  border: none;
+  border-radius: 7px;
+  margin: 10px 0;
+  padding: 5px 28px;
+  color: white;
+  height: 1.8rem;
+}
+
+.body-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 97px;
+}
+
+.main-section {
+  height: 10px;
+  width: 65vw;
+}
+
+.queue-section {
+  height: 10px;
+  width: 25vw;
+}
+
+/* ---------------------------------------- QUEUE SECTION ---------------------------------------------------- */
+
+.queue-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.queue-head h3 {
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.queue-head p {
+  display: inline-block;
+  margin: 20px 0;
+}
+
+#queue-dropdown {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  position: fixed;
+}
+
+#queue-dropdown p {
+  display: block;
+  margin: 10px;
+  border-bottom: 2px solid dimgray;
+  padding-bottom: 5px;
+}
+
+#queue-dropdown:target {
+  color: #000;
+  background-color: white;
+  height: 7rem;
+  width: 10rem;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 3px;
+  right: 4%;
+  top: 28%;
+  transition: all 0.4s ease-in-out;
+}
+
+.queue-playlist {
+  padding: 20px;
+  line-height: 2;
+}
+
+.queue-playlist h5 {
+  display: inline-block;
+  position: relative;
+  bottom: 25px;
+  margin-left: -5px;
+  margin-right: 5px;
+}
+
+.queue-playlist img {
+  border-radius: 5px;
+}
+
+.queue-playlist ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 10px;
+  display: inline-block;
+}
+
+.queue-playlist h4 {
+  margin: 0;
+  display: inline-block;
+}
+
+.queue-playlist p {
+  margin: 0;
+  display: inline-block;
+}
+
+.queue-playlist li {
+  margin: 0;
+}
+
+.queue-playlist img:hover {
+  opacity: 0.6;
+}
+
+/* --------------------------------------------- MAIN SECTION ------------------------------------------------- */
+
+.main-head {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-head img {
+  margin: 15px 0;
+  border: none;
+}
+
+.main-head img:hover {
+  transform: scale(1.3);
+  border-radius: 9%;
+  box-shadow: 0 0 3px 5px rgb(46, 46, 126);
+  transition: all 0.1s ease-in-out;
+}
+
+.main-second {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.7;
+  width: 95%;
+}
+
+.main-second img {
+  border-radius: 1px;
+}
+
+.main-second ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 10px;
+  display: inline-block;
+}
+
+.main-second h4 {
+  margin: 0;
+  display: inline-block;
+}
+
+.main-second p {
+  margin: 0;
+  display: inline-block;
+}
+
+.main-second li {
+  margin: 0;
+}
+
+.main-second img:hover {
+  opacity: 0.6;
+}
+
+#main3-dropdown {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  position: sticky;
+}
+
+#main3-dropdown p {
+  display: block;
+  margin: 5px;
+  border-bottom: 2px solid dimgray;
+}
+
+#main3-dropdown:target {
+  color: #000;
+  background-color: white;
+  border: 1px solid dimgrey;
+  height: 11rem;
+  width: 10rem;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 3px;
+  left: 19%;
+  top: 85%;
+  transition: all 0.4s ease-in-out;
+}
+
+.main-third {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-third :hover {
+  opacity: 0.7;
+}
+
+.main-fourth {
+  background-color: var(--lessblue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.main-fourth p {
+  padding-top: 15px;
+}
+
+.station1 {
+  opacity: 0.7;
+  text-align: center;
+  height: 6rem;
+  width: 6rem;
+  background-color: antiquewhite;
+  background-image: url("../images and css/station_img.jpg");
+  background-size: contain;
+  border-radius: 50%;
+  color: #000;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.station2 {
+  opacity: 0.7;
+  text-align: center;
+  height: 6rem;
+  width: 6rem;
+  background-color: antiquewhite;
+  background-image: url("../images and css/station_img.jpg");
+  background-size: contain;
+  border-radius: 50%;
+  color: #000;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.station3 {
+  opacity: 0.7;
+  text-align: center;
+  height: 6rem;
+  width: 6rem;
+  background-color: antiquewhite;
+  background-image: url("../images and css/station_img.jpg");
+  background-size: contain;
+  border-radius: 50%;
+  color: #000;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.station4 {
+  opacity: 0.7;
+  text-align: center;
+  height: 6rem;
+  width: 6rem;
+  background-color: antiquewhite;
+  background-image: url("../images and css/station_img.jpg");
+  background-size: contain;
+  border-radius: 50%;
+  color: #000;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.main-fifth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.genre {
+  text-align: center;
+  height: 150px;
+  width: 265px;
+  background-image: url("../images and css/headphones.jpg");
+  background-size: cover;
+}
+
+.genre:hover {
+  background-size: 130%;
+  box-sizing: border-box;
+  transition: all 0.7s ease-in-out;
+}
+
+.genre p {
+  padding-top: 35px;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+
+
+/* -------------------------------------------------- Footer -------------------------------------------------- */
+
