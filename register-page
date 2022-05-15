@@ -1,0 +1,164 @@
+
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel='stylesheet' type='text/css' href='loglog.css' >
+        <style>
+            span{
+                font-size: 13px;
+                color:red;
+                font-family: monospace;
+
+            }
+            
+
+        </style>
+        <script>
+            
+                //form validation
+        
+            function validateform(){
+                if(document.myform.Name.value==''){
+                    document.getElementById('name').innerHTML='please provide your name'
+                    document.myform.Name.focus();
+                    return false;
+                }
+                var numb=document.myform.num.value;
+                if (isNaN(numb) || numb==''){
+                    document.getElementById('num').innerHTML="Enter Numeric value only";
+                    return false;
+                }
+                if(document.myform.Email.value==''){
+                    document.getElementById('email').innerHTML="please provide your Email!";
+                    document.myform.Email.focus();
+                    return false;
+                }
+                if(document.myform.address.value==''){
+                    document.getElementById('address').innerHTML="please provide your address.";
+                    document.myform.address.focus();
+                    return false;
+                }
+                if(document.myform.city.value=='-1'){
+                    document.getElementById('city').innerHTML="select any one city";
+                    document.myform.city.focus();
+                    return false;
+                }
+                if(document.myform.state.value=='-1'){
+                    document.getElementById('state').innerHTML="select any one state";
+                    document.myform.state.focus();
+                    return false;
+                }
+                if(document.myform.zip.value==''|| isNaN(document.myform.zip.value)||(document.myform.zip.value.length!=6)){
+                    document.getElementById('zip').innerHTML="please provide a valid zip code.";
+                    document.myform.zip.focus();
+                    return false;
+                }
+                var p1=document.myform.pass1.value;
+                var p2=document.myform.pass2.value;
+                if (((p1.length)!=8) || p1==''){
+                    document.getElementById('pass1').innerHTML="Enter 8-digit password";
+                    document.myform.pass1.focus();
+                    return false;
+                }
+               if (p1!=p2){
+                   document.getElementById('pass2').innerHTML="Both passwords must be same and valid";
+                   document.myform.pass2.focus(); 
+                   return false; 
+               } 
+                
+                msg();
+                return true;
+                
+            }
+        
+            </script>
+    </head>
+    <body>
+        <div id='register-container'>
+            <centre>
+                <form name='myform' action=""  method="post">
+                <table><caption><div id='heading'><h1>Registration Form</h1></div></caption><tr><td>
+                    <div id='img'><abbr title='change profile pic'><a href='C:\Users\Manpreet singh\Desktop\project' target='_blank'><img src='upro.png' alt='profile' align='left' ></a></abbr></div></td>
+                    <td><div >
+            <label for="name"  >User Name</label><span>*</span>
+            <input type='text' name='Name' placeholder="Enter User Name" ><span id=name></span><br/><br/>
+            <label for="phno">Phone Number</label><span>*</span>
+            <input  name='num' type='text' max=10 size=10 placeholder="00000-00000" ><span id=num></span><br/><br/>
+            <label for="email">Email Id</label><span>*</span>
+            <input type='email' name='Email' placeholder="abc@gmail.com" ><span id=email></span><br/><br/>
+            <label for="address">Delivery Address</label><span>*</span>
+            <input type='text'name='address' placeholder='Address' ><span id=address></span><br/><br/>
+            <input type='text'  placeholder='Address Line2'>
+            <select name='city' >
+                <option value='-1' >City</option>
+                <option value='1' >Ajmer</option>
+                <option value='2' >Ambala</option>
+                <option value='3' >Bangalore</option>
+                <option value='4' >Chennai</option>
+                <option value='5' >Dehradun</option>
+                <option value='6' >Firozabad</option>
+                <option value='7' >Mumbai</option>
+                <option value='8' >Rajpura</option>
+                <option value='9' >Pune</option>
+                <option value='10' >Mohali</option>
+                <option value='11' >Chandigarh</option>
+                <option value='-1' >City</option>
+                <option value='1' >Ajmer</option>
+                <option value='2' >Ambala</option>
+                <option value='3' >Bangalore</option>
+                <option value='4' >Chennai</option>
+                <option value='5' >Dehradun</option>
+                <option value='6' >Firozabad</option>
+                <option value='7' >Mumbai</option>
+                <option value='8' >Rajpura</option>
+                <option value='9' >Pune</option>
+                <option value='10' >Mohali</option>
+                <option value='11' >Chandigarh</option>
+
+            </select><span id=city></span><br/><br/>
+            <select name='state' >
+                <option value='-1' >State</option>
+                <option value='1' >Punjab</option>
+                <option value='2' >Haryana</option>
+                <option value='3' >HimachalPradesh</option>
+                <option value='4' >Maharashtra</option>
+                <option value='5' >Delhi</option>
+                <option value='6' >Uttar Pradesh</option>
+                <option value='7' >Uttrakhand</option>
+                <option value='8' >Gujarat</option>
+                <option value='9' >Goa</option>
+                <option value='10' >Assam</option>
+                <option value='11' >Jammu</option>
+                <option value='1' >Punjab</option>
+                <option value='2' >Haryana</option>
+                <option value='3' >HimachalPradesh</option>
+                <option value='4' >Maharashtra</option>
+                <option value='5' >Delhi</option>
+                <option value='6' >Uttar Pradesh</option>
+                <option value='7' >Uttrakhand</option>
+                <option value='8' >Gujarat</option>
+                <option value='9' >Goa</option>
+                <option value='10' >Assam</option>
+                <option value='11' >Jammu</option>
+            </select><span id=state></span><br/><br/>
+            <input type='text' name='zip' placeholder="Enter your postal/zip Code" ><span id=zip></span><br/><br/>
+            <label for='password'>Create a Password</label><span>*</span>
+            <input type='password' name='pass1' placeholder='create a password' ><span id='pass1'></span><br/><br/>
+            <label for='password'>Confirm Password</label><span>*</span>
+            <input type='password' name='pass2' placeholder='confirm password' ><span id='pass2'></span><br/><br/>
+            <input type='checkbox' name='agree' value='yes' required>By Continuing,I agree to the<a href='terms.html'>Terms and Conditions</a> & <a href='policy.html'>Privacy Policy</a>
+            <button type="submit" id='submit' onclick='validateform()'>register</button>
+            <script>
+                function msg(){
+                    alert('submitted successfully!')
+                }
+
+            </script>
+        </div></td></table>
+             </form></centre>
+        </div>
+        
+        
+    </body>
+
+</html>
