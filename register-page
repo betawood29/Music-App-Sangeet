@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Sign Up</title>
-        <link rel='stylesheet' type='text/css' href='loglog.css' >
+        <link rel='stylesheet' type='text/css' href='login.css' >
         <style>
             span{
                 font-size: 13px;

@@ -75,6 +75,10 @@ body {
   height: 1.8rem;
 }
 
+.anc a{
+  color: white;
+}
+
 .body-container {
   display: flex;
   justify-content: center;
